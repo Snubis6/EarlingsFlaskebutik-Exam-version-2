@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Products</title>
+</head>
+
+
+
+<body>
+    <nav id="links-Box">        
+        <a class="links" href="./aboutbeer.html">About beer</a>
+        <a class="links" href="./aboutus.html">About us</a>
+        <a class="logo-Home" href="./entrance.html"><img src="./images/semple1.png" alt="Home" ></img></a>
+        <a class="links" href="./products.html" style="text-decoration: underline; color: #450e4b; text-shadow: 0 0 15px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;">Products</a>
+        <a class="links" href="Events.html">Events</a>           
+    </nav>
+    <div class="main-Box">
+        
+        <div id="hero-Box">
+            <img id="hero-Img" src="./images/product.png" alt="Hero">
+        </div>
+        <div id="content-Box">
+            <h1>Erling's Flaskebutik Aarhus</h1>
+            <br>
+            <p>Here you can find only constantly resupplied products. For the rest of our limited time stock you will need to visit our physical store located <a href="./aboutus.html" style="text-decoration:underline;">here!</a></p><br>
+            <p>If you want to order bigger amount please fill out our <a href="./Events.html" style="text-decoration:underline;">form!</a></p>            
+        </div>
+        <div id="search-Box-Products">
+            <form id="tagSearch">
+                <input input type="text" id="tags" class="tagSearchBar" name="tags"></input>
+                <button type="submit" id="tags-submit" class="tagsSubmitBtn">Confirm</button>
+                <button type="submit" id="tags-clear" class="tagsClearBtn">Clear</button>
+                <button type="submit" id="tags-ale" class="tagsAleBtn">Ale</button>
+                <button type="submit" id="tags-lager" class="tagsLagerBtn">Lager</button>
+                
+            </form>
+        </div>
+        <div class="product-Contents-Box" id="product-Contents-Box">
+            
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <div id="modal-Text-Box">
+                <p>Thanks for subscribing to our fancy newsletter!</p>
+                <p>Now that it is done it's time to check out our <a href="./products.html" style="text-decoration: underline;  color:blueviolet;">product selection!</a></p>
+            </div>
+        </div>      
+    </div>
+    <footer>
+        <img id="footer-Img" src="./images/Footer.svg"></img>
+        <div id="footer-Text-Box">
+            <p>Erling's Flaskebutik Aarhus Aps</p><br>
+            <p>Mejlgade 51D</p><br>
+            <p>8000 Aarhus</p><br>
+            <p>CVR: 42163813</p><br>
+            <p>Privacy Policy</p><br>
+        </div>
+        <div id="footer-Logo-Box">
+            <img src="./images/semple.png">
+        </div>
+        <div id="footer-Newsletter-Box">
+            <div id="newsletterBox-Content">
+                <h1>Subscribe to our newsletter</h1>
+                <form>
+                    <input type="text" id="email" name="email">
+                    
+                </form>
+                <button type="button" id="newsletter-SubmitButton" >Submit</button>
+            </div>
+        </div>    
+    </footer>
+</body>
+
+
+<script src="./script.js"></script>
+<script src="./data.js"></script>
+</html>

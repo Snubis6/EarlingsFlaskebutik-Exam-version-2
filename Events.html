@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Events</title>
+</head>
+
+
+
+<body>
+    <nav id="links-Box">        
+        <a class="links" href="./aboutbeer.html">About beer</a>
+        <a class="links" href="./aboutus.html">About us</a>
+        <a class="logo-Home" href="./entrance.html"><img src="./images/semple1.png" alt="Home" ></img></a>
+        <a class="links" href="./products.html">Products</a>
+        <a class="links" href="./Events.html" style="text-decoration: underline; color: #450e4b; text-shadow: 0 0 15px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;">Events</a>           
+    </nav>
+    <div class="main-Box">
+        
+        <div id="hero-Box">
+            <img id="hero-Img" src="./images/event.png" alt="Hero">
+        </div>
+
+    <div id="content-Box">
+        <div class="event-Box">
+            <div class="article-Box">
+                <img style="width: 80%;" src="./images/Articles/maindeal.png">
+                <div class="content-Text-Article-Box">
+                    <h1 class="articleHeadline">Beer Tasting  -  14/06/2022</h1><br>
+                    <p class="articleParagraph">Come and try out our new arrivals straigt from Moersleutel brewery, one of the best! <br><br> More information before the event, or if you want to make sure to be the first who knows about the details subscribe to our <a href="#footer-Newsletter-Box">Newsletter!</a></p>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+        <form  id="form" >
+
+            <div class="formstyle">
+                <label class="label" for="name">Name</label>
+                <input type="text" class="textinput" name="fname" value="">
+            </div>
+
+            <div class="formstyle">
+                <label  class="label" for="email">E-mail</label>
+                <input type="text" class="textinput" name="fname" value="">
+            </div>
+
+            <div class="formstyle">
+                <label class="label"  for="phone">Phone number</label>
+                <input type="text" class="textinput" name="lname">
+            </div>
+
+            <div class="formstyle">
+                <label  class="label" for="date">Date of Event</label>
+                <input type="date" class="textinput" name="lname">
+            </div>
+
+            <div class="formstyle">
+                <label class="label"  for="cans">Number of Cans</label>
+                <input type="text" class="textinput" name="lname">
+            </div>
+
+            <div class="formstyle">
+                <label class="label"  for="bottles">Number of Bottles</label>
+                <input type="text" class="textinput" name="lname">
+            </div>
+
+            <div class="formstyle">
+                <label class="label"  for="product">Message:</label>
+                <input type="text" class="textinput" name="lname"><br><br>
+            </div>
+
+            <input id="formsubmit" type="submit" value="Submit">
+        </form> 
+           
+    </div>
+
+    
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <div id="modal-Text-Box">
+                <p>Thanks for subscribing to our fancy newsletter!</p>
+                <p>Now that it is done it's time to check out our <a href="./products.html" style="text-decoration: underline;  color:blueviolet;">product selection!</a></p>
+            </div>
+        </div>      
+      </div>
+    <footer>
+        <img id="footer-Img" src="./images/Footer.svg"></img>
+        <div id="footer-Text-Box">
+            <p>Erling's Flaskebutik Aarhus Aps</p><br>
+            <p>Mejlgade 51D</p><br>
+            <p>8000 Aarhus</p><br>
+            <p>CVR: 42163813</p><br>
+            <p>Privacy Policy</p><br>
+        </div>
+        <div id="footer-Logo-Box">
+            <img src="./images/semple.png">
+        </div>
+        <div id="footer-Newsletter-Box">
+            <div id="newsletterBox-Content">
+                <h1>Subscribe to our newsletter</h1>
+                <form>
+                    <input type="text" id="email" name="email">
+                    
+                </form>
+                <button type="button" id="newsletter-SubmitButton" >Submit</button>
+            </div>
+        </div>    
+    </footer>
+</body>
+
+
+<script src="./script.js"></script>
+</html>
