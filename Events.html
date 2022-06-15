@@ -14,7 +14,7 @@
     <nav id="links-Box">        
         <a class="links" href="./aboutbeer.html">About beer</a>
         <a class="links" href="./aboutus.html">About us</a>
-        <a class="logo-Home" href="./entrance.html"><img src="./images/semple1.png" alt="Home" ></img></a>
+        <a class="logo-Home" href="./entrance.html"><img src="./images/semple1.png" alt="Home" ></a>
         <a class="links" href="./products.html">Products</a>
         <a class="links" href="./Events.html" style="text-decoration: underline; color: #450e4b; text-shadow: 0 0 15px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;">Events</a>           
     </nav>
@@ -27,7 +27,7 @@
     <div id="content-Box">
         <div class="event-Box">
             <div class="article-Box">
-                <img style="width: 80%;" src="./images/Articles/maindeal.png">
+                <img style="width: 80%;" src="./images/Articles/maindeal.png" alt="Deal">
                 <div class="content-Text-Article-Box">
                     <h1 class="articleHeadline">Beer Tasting  -  14/06/2022</h1><br>
                     <p class="articleParagraph">Come and try out our new arrivals straigt from Moersleutel brewery, one of the best! <br><br> More information before the event, or if you want to make sure to be the first who knows about the details subscribe to our <a href="#footer-Newsletter-Box">Newsletter!</a></p>
@@ -40,37 +40,37 @@
 
             <div class="formstyle">
                 <label class="label" for="name">Name</label>
-                <input type="text" class="textinput" name="fname" value="">
+                <input type="text" id="name" class="textinput" name="fname" value="">
             </div>
 
             <div class="formstyle">
                 <label  class="label" for="email">E-mail</label>
-                <input type="text" class="textinput" name="fname" value="">
+                <input type="text" id="email" class="textinput" name="fname" value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="phone">Phone number</label>
-                <input type="text" class="textinput" name="lname">
+                <input type="text" id="phone" class="textinput" name="lname">
             </div>
 
             <div class="formstyle">
                 <label  class="label" for="date">Date of Event</label>
-                <input type="date" class="textinput" name="lname">
+                <input type="date" id="date" class="textinput" name="lname">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="cans">Number of Cans</label>
-                <input type="text" class="textinput" name="lname">
+                <input type="text" id="cans" class="textinput" name="lname">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="bottles">Number of Bottles</label>
-                <input type="text" class="textinput" name="lname">
+                <input type="text" id="bottles" class="textinput" name="lname">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="product">Message:</label>
-                <input type="text" class="textinput" name="lname"><br><br>
+                <input type="text" id="product" class="textinput" name="lname"><br><br>
             </div>
 
             <input id="formsubmit" type="submit" value="Submit">
@@ -91,7 +91,7 @@
         </div>      
       </div>
     <footer>
-        <img id="footer-Img" src="./images/Footer.svg"></img>
+        <img id="footer-Img" src="./images/Footer.svg" alt="Footer-Background">
         <div id="footer-Text-Box">
             <p>Erling's Flaskebutik Aarhus Aps</p><br>
             <p>Mejlgade 51D</p><br>
@@ -100,7 +100,7 @@
             <p>Privacy Policy</p><br>
         </div>
         <div id="footer-Logo-Box">
-            <img src="./images/semple.png">
+            <img src="./images/semple.png" alt="Logo">
         </div>
         <div id="footer-Newsletter-Box">
             <div id="newsletterBox-Content">
@@ -113,8 +113,9 @@
             </div>
         </div>    
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 
-<script src="./script.js"></script>
+
 </html>
