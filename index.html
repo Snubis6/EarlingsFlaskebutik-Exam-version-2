@@ -14,7 +14,12 @@
         <h1>Are you old enough to hold beer?</h1><br>
         <div id="question-Buttons">
             <button onclick="window.location.href='./entrance.html';" type="button" id="Yes" class="yesBtn"><p>Yes</p></button>
-            <button type="button" id="No" class="noBtn"><p>No</p></button>
+            <button onclick=" if (document.getElementById(`question-Box`).style.display === `none`) {
+                document.getElementById(`question-Box`).style.display = `block`;
+              } else {
+                document.getElementById(`question-Box`).style.display = `none`;
+                document.getElementById(`no-Box`).style.display = `block`;
+              }; " type="button" id="No" class="noBtn"><p>No</p></button>
         </div>
     </div>
     <div id="no-Box">
@@ -22,5 +27,5 @@
         <img src="./images/Juice.jpg">
     </div>
 </body>
-<script src="./script.js"></script>
+
 </html>
