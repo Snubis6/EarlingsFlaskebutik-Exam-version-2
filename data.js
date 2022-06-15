@@ -57,11 +57,11 @@ const products = [
     },
     {
       image: "./images/Products/8.png",
-      name: "Tokyeo Lemonade",
+      name: "Tokyo Lemonade",
       type: "Ale",
       subtype: "Gose",
       alchohol: 4.2,
-      price: 35,
+      price: 50,
     },
     {
       image: "./images/Products/9.png",

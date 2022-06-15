@@ -40,7 +40,7 @@ productContainer.innerHTML="";
     productBox = `
       <div class="box-Product" id="productBox">
         <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+        <p class="box-Product-Name" id="productBoxName">${product.name}</p>
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
@@ -59,7 +59,7 @@ aleTag.onclick = function(d) {
       productBox = `
       <div class="box-Product" id="productBox">
         <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+        <p class="box-Product-Name" id="productBoxName">${product.name}</p>
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
@@ -75,7 +75,7 @@ lagerTag.onclick = function(d) {
     productBox = `
     <div class="box-Product" id="productBox">
       <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-      <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+      <p class="box-Product-Name" id="productBoxName">${product.name}</p>
       <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
       <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
     </div>
