@@ -123,8 +123,11 @@ body{
   width: 99vw;
   max-width: 100%;
   height: auto;
+  filter: brightness(50%) 
 }
-
+#hero-Box{
+z-index: 0;
+}
 #content-Box{
   height: auto;
   color: white;  
@@ -720,6 +723,18 @@ display: flex;
     opacity: 1;
   }
 }
+#headerext{
+  position:absolute;
+  top:11vw;
+  left:31%;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 4vw;
+  text-shadow: 0 0 2px #fff, 0 0 3px #f8aeae, 0 0 8px #d96e6e;
+  letter-spacing: 0.3vw;
+  
+}
 
 .about-box{
   width:100%;
@@ -756,8 +771,9 @@ display: flex;
 }
 #staff h1{
   margin-bottom: 3%;
-  color: purple;
+  color: #FF3131;
 }
+
 #staff-box{
   width:100%;
   display: flex;
@@ -771,13 +787,30 @@ display: flex;
 }
 .profilepic{
   width: 15vw;
+  height: 12vw;
 }
 .staffname{
   font-family: 'Franklin Gothic Book';
-  color: purple;
+  color: #FF3131;
+  margin-top: 1vw;
+
+}
+#staff h3{
+  font-family:'Franklin Gothic Book';
+  font-size:medium;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  color:rgb(151, 151, 151)
+}
+
+#staffp{
+  line-height: 6;
+  font-family: 'Franklin Gothic Book';
+  width: 15vm;
+  
 }
 #aboutshop h1{
-  color: purple;
+  color: #FF3131
 }
 #contact{
   width:100%;
@@ -785,10 +818,11 @@ display: flex;
   height: fit-content;
   display: flex;
   padding-bottom: 10vw;
+ 
 
 }
 #contact h1{
- color: purple;
+ color: #FF3131;
 }
 .openinghours{
   width: 50%;
@@ -808,7 +842,9 @@ display: flex;
 }
 .mapouter{
   margin-top: 1vw;
+
 }
+
 /*ABOUT US PAGE ENDS*/
 
 
