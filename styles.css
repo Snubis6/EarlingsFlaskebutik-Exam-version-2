@@ -302,6 +302,7 @@ footer{
 #product-Contents-Box{
   display: flex;
   flex-direction: row;
+  
   justify-content: space-evenly;
   width: 75%;
   flex-wrap: wrap;
@@ -312,8 +313,7 @@ footer{
   height: 350px;
   flex: 1 0 calc(20% - 10px);
   margin: 2%;
-  justify-content: center;
-  align-items: center;
+  
   text-align: center;
   
 }
@@ -336,10 +336,8 @@ footer{
   font-size: 1.6vw;
 }
 .box-Product-Description{
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
+  display: flex;
+  flex-direction: column;
 }
 #tagSearch{
   position: absolute;
