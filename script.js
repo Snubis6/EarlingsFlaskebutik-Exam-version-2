@@ -83,3 +83,25 @@ lagerTag.onclick = function(d) {
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
 
+
+
+
+
+//EVENTS PAGE
+
+function myEventFunction() {
+
+  var empt = document.forms["form1"]["fname"].value;
+if (empt == "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+  document.getElementById("form" ).style.display = "none"; 
+  document.getElementById("confmess").style.display = "block";
+return true; 
+}
+}
+
