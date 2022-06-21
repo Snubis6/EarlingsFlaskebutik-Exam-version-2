@@ -11,6 +11,26 @@ var span = document.getElementsByClassName("close")[0];
 
 let productBox = "";
 
+
+// function addSearchListener() {
+//   console.log('123')
+// }
+
+window.onload = function() {
+   document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
+   mySearchFunction();
+  //
+  //myEventFunction();
+
+ }
+
+
+
+
+// function addFormListener() {
+//   console.log('345')
+// }
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -31,11 +51,28 @@ window.onclick = function(event) {
 
 
   
+document.getElementById("eventForm").addEventListener("submit", myEventFunction);
+//EVENTS PAGE
+function myEventFunction(e) {
+  e.preventDefault();
+  const form = document.getElementById("eventForm")
+  const message = document.getElementById("succesMessage")
 
+  form.style.display = "none"; 
+  message.style.display = "block";
+  
+  setTimeout(function() {
+    message.style.display = "none";
+    form.style.display = "block"
+  }, "5000") //5sec
+  
+document.getElementById("eventForm").reset();
 
+  return;
+}
 
-window.onload = function(){
-productContainer.innerHTML="";
+function mySearchFunction(){
+  productContainer.innerHTML="";
   for( const product of products){
     productBox = `
       <div class="box-Product" id="productBox">
@@ -44,11 +81,11 @@ productContainer.innerHTML="";
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
-      `;
-       productContainer.insertAdjacentHTML("beforeend", productBox);
-}
-document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
-function mySearchFunction(){
+    `;
+    productContainer.insertAdjacentHTML("beforeend", productBox);
+  };
+
+
   var input, filter, li, a, i, txtValue;
   input = document.getElementById("mySearchInput");
   filter = input.value.toUpperCase();
@@ -64,11 +101,6 @@ function mySearchFunction(){
       }
   }
 }
-
-};
-
-
-
 
 aleTag.onclick = function(d) {
     d.preventDefault();
@@ -101,26 +133,4 @@ lagerTag.onclick = function(d) {
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
-
-
-
-
-
-//EVENTS PAGE
-
-function myEventFunction() {
-
-  var empt = document.forms["form1"]["fname"].value;
-if (empt == "")
-{
-alert("Please input a Value");
-return false;
-}
-else 
-{
-  document.getElementById("form" ).style.display = "none"; 
-  document.getElementById("confmess").style.display = "block";
-return true; 
-}
-}
 

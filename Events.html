@@ -43,37 +43,37 @@
     </div>
 
 
-        <form  name="form1" id="form" onsubmit=" return myEventFunction()">
+        <form  name="form1"  id="eventForm">
 
             <div class="formstyle">
 
                 <label class="label" for="name">Name</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="name" class="textinput" name="fname" placeholder="Type your name..."  value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="name" class="textinput" name="fname" placeholder="Type your name..."  value="">
             </div>
 
             <div class="formstyle">
-                <label  class="label" for="emaila">E-mail</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="email2" class="textinput" name="fname" placeholder="Type your email address..." value="">
+                <label class="label" for="emaila">E-mail</label>
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="email2" class="textinput" name="fname" placeholder="Type your email address..." value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="mphone">Phone number</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="phone" class="textinput" name="fname" placeholder="Type your phone number..." value=""> 
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="phone" class="textinput" name="fname" placeholder="Type your phone number..." value=""> 
             </div>
 
             <div class="formstyle">
-                <label  class="label" for="date">Date of Event</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 1vw;" type="date" id="date" class="textinput" name="fname" value="">
+                <label class="label" for="date">Date of Event</label>
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 1vw;" type="date" id="date" class="textinput" name="fname" value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="cans">Number of Cans</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="cans" class="textinput" name="fname" placeholder="Type the number of cans..." value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="cans" class="textinput" name="fname" placeholder="Type the number of cans..." value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="bottles">Number of Bottles</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="bottles" class="textinput" name="fname" placeholder="Type the number of bottles..." value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="bottles" class="textinput" name="fname" placeholder="Type the number of bottles..." value="">
             </div>
 
             <!-- <div class="formstyle">
@@ -86,15 +86,18 @@
 
             <div class="formstyle">
                 <label class="label"  for="product">Message:</label>
-                <input style="height: 10vw; width: 15vw; color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="product" class="textinput" name="fname" placeholder="Type your message here..." value=""><br><br>
+                <input required style="height: 10vw; width: 15vw; color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="product" class="textinput" name="fname" placeholder="Type your message here..." value=""><br><br>
             </div>
 
 
-            <input id="formsubmit" type="submit" value="Submit">
+            <input id="formsubmit"  type="submit" value="Submit">
 
 
         </form> 
 
+        <div id="succesMessage">
+            <p>You have successfully submitted the form!<br> The page will refresh in 5 seconds</p>
+        </div>
 
            
     </div>

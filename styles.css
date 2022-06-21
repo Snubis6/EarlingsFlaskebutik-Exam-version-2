@@ -654,7 +654,7 @@ position: absolute;
 
 /*FORM*/
 
-#form {
+#eventForm {
   display: table;
 }
 
@@ -662,13 +662,13 @@ position: absolute;
   display: table-row;
 }
 
-#form label, input {
+#eventForm label, input {
   display: table-cell;
 
 }
 
 
-#form label {
+#eventForm label {
   padding-right: 5.5vw;
   color: rgb(255, 255, 255);
   font-size: 1.6vw;
@@ -711,7 +711,7 @@ position: absolute;
   border: #ff31319d 0.2vw solid;
 } 
 
-#form {
+#eventForm {
   max-width:100%;
   margin-bottom: 10vw;
   margin-left: auto;
@@ -719,6 +719,17 @@ position: absolute;
   margin-top: 0%;
 }  
 
+#succesMessage{
+  display: none;
+  width: 15%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  font-size: 0.95vw;
+  background-color: #ff313123;
+  font-family: 'baskerville_old_face_dregular';
+  
+}
 
 
 /*ABOUT US PAGE STARTS*/
