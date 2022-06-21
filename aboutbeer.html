@@ -6,72 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
-    <style>
-        /*{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }*/
-        html{
-            scroll-behavior: smooth;
-        }
-        section{
-            height: 1080px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            scroll-snap-align: start;
-            scroll-behavior: smooth;
-            color: white;
-        }
-        .page.container{
-            scroll-snap-type: y mandatory;
-            overflow-y: auto;
-            height: 1080px;
-        }
-        .first{
-            background-image:url(images/Main.jpg);
-        }
-        .second{
-            background-image:url(images/Lager.jpg);
-
-            
-        }
-        .third{
-            background-image:url(images/Ale.png);
-        }
-        h1{
-            align-items: center;
-        }
-        .sidenav {
-            
-            width: 130px;
-            position: fixed;
-            z-index: 1;
-            top: 40vh;
-            left: 4vw;
-            overflow-x: hidden;
-            padding: 8px 0;
-        }
-
-
-        .sidenav a {
-
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #000;
-            display: block;
-        }
-
-
-        .sidenav a:hover {
-            color: #6d0e8a;
-
-        }
-
-</style>
 </head>
 <body>
     <nav id="links-Box">        
@@ -82,234 +16,55 @@
         <a class="links" href="./Events.html">Events</a>           
     </nav> 
     
-    <!--Container for the whole background-->
-    <div class="page.container">
-            <!--Main part-->
-            <section id="first" class="first">
-                <h1>Beer types</h1><br>
-                <p>Everybody knows what beer is, it’s hard not to, if you passed 18. <br> 
-                    But do we actually know it? Probably not fully. <br>
-                    We would like to help our customers with this small bit in here, <br> 
-                    so you can be sure next time what kind of beers you like <br>
-                    or what you haven’t tried yet! <br>
-                    <br>
-                    The two sections down will be about lagers and ales. <br>
-                    Open them up and read the small description about the styles they have, <br>
-                    so next time, when you shop at our place you won’t feel lost! <br>
-                    </p>
-            </section>
-            <!--Lager part-->
-            <section id="second" class="second">
-                <h1>Lager</h1>
-                <p>Lager, coming from the German word Lagerbier referred to the <br>
-                    bottom-fermented, cool-conditioned beer. It is considered <br>
-                    as a great launching pad for newcomers, as it doesn’t have <br>
-                    as bitter taste as the ales. Usually known for its pale golden colour <br>
-                    , but lagers also have darker types too. <br><br>
-                    Most famous lagers: <br>
-                    <ul>
-                        <li>Carlsberg (Denmark)</li>
-                        <li>Carling (UK)</li>
-                        <li>Pilsner Urquell (Czech Republic)</li>
-                        <li>Tsingtao (China)</li>
-                    </ul>
-
-<!--                     
-                     <div class="container">
-                        <button type="button" class="btn btn-info btn-lg" id="beerBtn">Click here</button>
-                         <div class="modal fade" id="beerModal" role="dialog">
-                          <div class="modal-dialog">
-                          
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Lager</h4>
-                              </div>
-                              <div class="modal-body">
-
-                                <h1>Pilsner</h1>
-                                <p> The most famous one among the lagers, this style came from a city called Plzen in the Czech Republic.
-                                    Color: 		From light straw to pale golden <br>
-                                    Taste:		Crisp, the German versions can be a bit bitter <br>
-                                    Fun fact:	Most of the American lagers are based on pilsners. <br><br></p>
-                                    Famous pilsners: <br>
-                                    <ul>
-                                        <li>-   Heineken</li>
-                                        <li>-	Pilsner Urquell (first pilsner ever made)</li>
-                                        <li>-	Stella Artois</li>
-                                        <li>-	Budweiser Budvar</li>
-                                    </ul>
-
-                                    <h1>Helles/Hell</h1>
-                                    Color:		Light colored golden <br>
-                                    Taste:		Mildly sweet, not that bitter, less hop flavor than pilsner <br>
-                                    Fun fact:	It is often referred to as Munich lager, and because of its light taste it compliments salads and seefood. <br><br>
-                                    Famous Hells:		<br>
-                                    <ul><li>-   Löwenbräu</li>
-                                        <li>-	Penn Brewery Gold</li>
-                                        <li>-	Hofbräu München></li>
-                                    </ul>
-
-                                    Märzen/Märzenbier
-                                    Color:		From pale to amber and even dark brown
-                                    Taste:		Sweet, less hoppy flavour
-                                    Fun fact:	It is the traditional beer of the Octoberfest.
-                                    Famous Märzens:	
-                                    - Sierra Nevada Octoberfest
-                                    -	Heater Allen Bobtoberfest
-                                    -	Schilling Konstantin
-
-                                    Vienna lager
-                                    Color:		Medium amber to reddish-brown
-                                    Taste:		Not that bitter and hoppy, more malty sweet
-                                    Fun fact:	Visiting England’s big brewing cities also helped a lot to make the first Vienna lager.
-                                    Famous Vienna lagers:	
-                                    - 100 Blumen
-                                    -	Mutter Milch
-                                    -	Loncium 
-
-                                    Bock
-                                    Color:		Dark, from light copper to brown
-                                    Taste:		Strong (all types has high alcohol content % (6.3 – 14), malty, toasty
-                                    Fun fact:	It has 4 styles next to the traditional, Maibock, Doppelbock, Eisbock and Weizenbock
-                                    Famous Bocks:	
-                                    - Weihenstephaner Korbinian
-                                    -	Saint Arnold Spring Bock
-                                    -	Ayinger Celebrator
-
-                                    Dunkel/Dunkles
-                                    Color:		From dark amber to dark brown
-                                    Taste:		Smooth malty
-                                    Fun fact:	If you order Dunkel in pubs, sometimes it can just mean that you’ll get whatever dark lagers they have.
-                                    Famous Dunkels:	
-                                    - Hofbräu München Dunkel
-                                    -	König Ludvig Dunkel
-                                    -	Dunkel Fester
-
-                                    Schwarzbier
-                                    Color:		Dark, opaque black
-                                    Taste:		Chocolaty, coffee-ish, strong
-                                    Fun fact:	It taste like Stout (Ale) beers, it’s because it was traditionally made as an ale, but they later tried cool fermentation instead of warm.</p>
-                                    Famous Scwarzbier:
-                                    - Köstritzer
-                                    -	Samuel Adams Black Lager
-                                    -	Xingu Black
-
-                               
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                            
-                          </div>
-                        </div>
-                        
-                      </div> -->
-                   
-                </p> 
-            </section>
-            <!--Ale part-->
-            <section id="third" class="third">
-                <h1>Ale</h1>
-                <p>The warm fermented ale is a type of beer that referred to a drink without hops. <br>
-                    Most of them has a stronger bitter taste, and with that a usually stronger <br>
-                    and darker color, compared to the lagers. The name “ale” <br>
-                    (or if you spell it as øl) in different languages can mean just beer itself, <br>
-                     as in Danish too. <br><br>
-                    Most famous ales: <br>	
-                    <ul>
-                        <li>Royal (Denmark)</li>
-                        <li>Guiness Dry Stout (Ireland)</li>
-                        <li>Dogfish Head 90 Minute IPA (United States)</li>
-                        <li>Sierra Nevada Pale Ale (United States)</li>    
-                    </ul>
-                    <!-- One day when I'll be smarter I can finish this too
-                        <div class="container">
-                        <button type="button" class="btn btn-info btn-lg" id="myBtn">Click here</button>
-                         <div class="modal fade" id="myModal" role="dialog">
-                          <div class="modal-dialog">
-                          
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Lager</h4>
-                              </div>
-                              <div class="modal-body">
-
-                                Ales
-
-                                Pale Ale
-                                Color:		Golden to amber
-                                Taste:		Fruity, crisp, overpowering hoppy flavor
-                                Fun fact: There are more than 10 types of Pale ale families in the world, the most famous is the India Pale Ale (IPA) and the American Pale Ale (APA)
-                                Famous Pale ales:	- AleSmith X Extra Pale Ale
-                                -	Boréale Sur Pilotis
-                                -	Sudden Death Spaceman Dust
-
-                                American Pale Ale (APA)
-                                Color:		Dark amber
-                                Taste:		Hop taste with malt sweetness, hint of citrus, pine or flowers
-                                Fun fact:	Made in America, made for American food. Recommended to drink next to grilled steak, burgers, fried chicken.
-                                Famous APAs:		
-                                - Three Floyds Zombie Dust
-                                -	Three Floyds Alpha King
-                                -	Lagunitas Born Yesterday Pale Ale
-
-                                India Pale Ale (IPA)
-                                Color:		Light and dark amber
-                                Taste:		Depends on brewery, can be citrusy or just strong and bitter
-                                Fun fact:	The name is tricky, it wasn’t invented in India, it was just the beer that was good enough to survive the road to India during colonization.
-                                Famous IPA: 		
-                                - AleSmith IPA
-                                -	Maine Beer Lunch
-                                -	Bell’s Two Hearted Ale
-
-                                Porter
-                                Color:		Dark brown
-                                Taste:		Acidic, dry, sweet, moderately bitter
-                                Fun fact:	Porter was the original dark beer, as stout was called “Strong/stout porter” back in the days
-                                Famous Porters:	
-                                - Hill Farmstead Everett
-                                -	Founders Porter
-                                -	Mikkeller Porter
-
-                                Stout
-                                Color:		Dark brown
-                                Taste:		Strong, roasted coffee/chocolate, caramel sweetness
-                                Fun fact:	There are a lot of variations, like oatmeal stout and milk stout…
-                                Famous Stouts:	
-                                -Guinesse
-                                -	Half Acre Original Reaper
-                                -	Stone Xocoveza Stout
-                                </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                            
-                          </div>
-                        </div>
-                        
-                      </div>-->
-
-
-
-                    </p>
-            </section>
-            <!--Sidenav-->
-            <div class="sidenav">
-                <a href="#first">Intro</a>
-                <a href="#second">Lager</a>
-                <a href="#third">Ale</a>
+    <body id="verpage">
+        <img style="display: flex; align-items: center; margin:auto; width: 20vw; margin-bottom: 5vw; margin-top: 5vw;" src="./images/logo.png" alt="logo">
+        <div id="question-Box">
+            <h1 style="color:rgb(0, 0, 0); font-size:4vw ">What would you like to read about?</h1><br>
+            <div id="question-Buttons">
+                <button onclick="window.location.href='./aboutbeer.html';" type="button" id="Yes" class="yesBtn">Our Breweries</button>
+                <button onclick=" if (document.getElementById(`question-Box`).style.display === `none`) {
+                    document.getElementById(`question-Box`).style.display = `block`;
+                  } else {
+                    document.getElementById(`question-Box`).style.display = `none`;
+                    document.getElementById(`no-Box`).style.display = `block`;
+                  }; " type="button" id="No" class="noBtn">Beer types</button>
             </div>
-
         </div>
-    
-        <!--<div class="main-Box">
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 4vw;">Our Breweries</h1><br><br>
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Moersleutel</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Dutch brewery which focuses on dark beers, which they do on a world class level.</p><br><br>
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Mad Scientist</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Hungarian brewery which makes all the beer styles, and sometimes pushes the boundaries <br> 
+            in beer brewing with their meads and also crazy adjuncts in their beer.</p><br><br>
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Gamma</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Great danish brewery that makes some of the best IPA's in Denmark</p><br><br>
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Garage</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Spanish brewery mostly known for their IPA's.</p><br><br>
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Frontaal</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Dutch brewery mostly known for their dark and barrel aged beers, but also their IPA's are high quality.</p><br><br>
+        
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Salama</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Finnish brewery who focus on making very hop-forward fruity IPA's, but also great <br> 
+            Berliner weisses and big Imperial Stouts.</p><br><br>
+        
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Observatoriet</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Danish brewery who focuses on making modern Wild Ales.</p><br><br>
+
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Garden</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Croatian brewery who makes most beer styles really well. IPA's, fruited sours and Stouts.</p><br><br>
+        
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Brulo</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Scottish brewery who only make non-alcoholic beers. Most of them are fruity IPA's.</p><br><br>
+        
+        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">The White Hag</h1><br>
+        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Irish brewery who makes affordable craft beer, while maintaining a high quality throughout all beer styles.</p><br><br>
         
         
-    </div>-->
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">

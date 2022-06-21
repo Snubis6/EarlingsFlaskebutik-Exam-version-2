@@ -755,17 +755,15 @@ position: absolute;
     opacity: 1;
   }
 }
-#headerText{
+#hero-Box h1{
   position:absolute;
-  top:11vw;
-  left:31%;
   text-align: center;
+  width: 100%;
   z-index: 1;
-  color: white;
-  font-size: 4vw;
-  text-shadow: 0 0 2px #fff, 0 0 3px #f8aeae, 0 0 8px #d96e6e;
+  color: #ffffff82;
+  font-size: 5.5vw;
   letter-spacing: 0.3vw;
-  
+  margin-top: 10vw;
 }
 
 .about-box{
@@ -833,6 +831,9 @@ position: absolute;
 
 .staffcard p{
   font-size: 1.1vw;
+}
+
+#staff {
   margin-bottom: 12vw;
 }
 /* Staff ends */
@@ -841,21 +842,32 @@ position: absolute;
 #contact{
   width:100%;
   background-size:cover ;
-  height: fit-content;
   display: flex;
+  margin-bottom: 5vw;
+}
+
+#contact h1 {
+  color: #ff31319d;
+  font-size: 1.7vw;
+  margin-bottom: 2vw;
 }
 
 .openinghours{
   width: 50%;
-  padding-left: 5vw;
   display:flex;
   flex-direction: column;
   text-align:center;
 }
+
+.openinghours p{
+ font-size: 1.3vw;
+}
+
 .findus{
   width: 50%;
-
 }
+
+
 
 
 /*ABOUT US PAGE ENDS*/
