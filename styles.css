@@ -862,3 +862,20 @@ position: absolute;
 /*ABOUT US PAGE ENDS*/
 
 
+
+/* Aboutourthingspage */
+
+#buttonsAbout {
+  display: flex;
+  width: 70%;
+}
+
+#beerAbout{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#breweryAbout{
+  width: 50%;
+}
