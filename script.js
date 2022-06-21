@@ -47,6 +47,7 @@ productContainer.innerHTML="";
       `;
        productContainer.insertAdjacentHTML("beforeend", productBox);
 }
+document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
 function mySearchFunction(){
   var input, filter, li, a, i, txtValue;
   input = document.getElementById("mySearchInput");
