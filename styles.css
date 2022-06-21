@@ -367,11 +367,32 @@ position: absolute;
 }
 .box-Product{
   
-  height: 350px;
-  flex: 1 0 calc(20% - 10px);
-  margin: 2%;
-  text-align: center;
   
+  height: 400px;
+  flex: 1 0 calc(15% - 10px);
+  margin: 5%;
+  text-align: center;
+  --b:0.1vw;   /* thickness of the border */
+  --c:#ff31319d;   /* color of the border */
+  --w:0.6vw;  /* width of border */
+  
+  border:var(--b) solid transparent; /* space for the border */
+  --g:transparent 90deg,var(--c) 0;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+  background-size:var(--w) var(--w);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  
+}
+
+.box-Product:hover{
+  color: #ff31319d;
+  border: #ff31319d 0.2vw solid;
+  margin-top: 50px;
 }
 .box-Product-Image{
   margin-top: 1.5vh;
@@ -388,12 +409,13 @@ position: absolute;
   color: white;
   font-size: 1.1vw;
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction:column;
 
 }
 .box-Product-Price{
-  color: purple;
+  color: #ff31319d;
   font-size: 1.6vw;
+  
 }
 
 #tagSearch{
