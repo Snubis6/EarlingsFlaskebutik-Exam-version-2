@@ -885,15 +885,69 @@ position: absolute;
 
 #buttonsAbout {
   display: flex;
-  width: 70%;
+  justify-content: space-around;
+  width: 50%;
+  text-align: center;
 }
 
 #beerAbout{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  
 }
 
 #breweryAbout{
-  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+}
+#buttonsAbout h2{
+  margin-top: 0.7vw;
+  font-size: 1.6vw;
+}
+
+.aboutBeerButton{
+  padding: 1vw;
+  --b:0.1vw;   /* thickness of the border */
+  --c:#ff31319d;   /* color of the border */
+  --w:0.6vw;  /* width of border */
+  
+  border:var(--b) solid transparent; /* space for the border */
+  --g:transparent 90deg,var(--c) 0;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+  background-size:var(--w) var(--w);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+}
+.buttonImg{
+  height: 10vw;
+}
+
+.aboutBeerButton:hover{ 
+  color: #ff31319d;
+  border: #ff31319d 0.2vw solid;
+}
+
+#aboutBeer{
+  display: none;
+}
+
+#aboutBrew{
+  display: block;
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
+
+#headerText{
+  display: block;
+}
+
+.brewName{
+  text-decoration-line: underline;
+  text-decoration-thickness: 10%;
 }

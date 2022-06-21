@@ -22,51 +22,56 @@
             <img id="hero-Img" src="./images/event.png" alt="Hero">
         </div>
 
-    <h1 style="color:#ff31319d; font-size:3vw; margin-bottom:4vw; margin-top:2vw;">Choose what you want to read about:</h1>
-    <div id="buttonsAbout">
-        <div id="beerAbout">
-            <img style="height: 10vw;" src="./images/beer.png" alt="beer">
-            <h2 style="color: white;">Beers</h2>
+        <h1 id="headerText" style="color:#ff31319d; font-size:3vw; margin-bottom:4vw; margin-top:2vw;">Choose what you want to read about:</h1>
+        <div id="buttonsAbout">
+            <div class="aboutBeerButton" id="beerAbout">
+                <img class="buttonImg" id="buttonImgBeer" src="./images/beer.png" alt="beer">
+                <h2 style="color: white;">Beers</h2>
+            </div>
+            <div class="aboutBeerButton" id="breweryAbout">
+                <img class="buttonImg" id="buttonImgBrew" src="./images/brewery.png" alt="brewery">
+                <h2 style="color: white;" >Breweries</h2>
+            </div>
         </div>
-        <div id="breweryAbout">
-            <img style="height: 10vw;"src="./images/brewery.png" alt="brewery">
-            <h2 style="color: white;" >Breweries</h2>
+        <div id="aboutBeer">
+            <h1>HHHHHHHHHHHHHHHHHHGGGGGGGGGGGGGGGGGG</h1>
         </div>
-    </div>
-    
-  
-        <!-- <h1 style="color: rgb(0, 0, 0); font-size: 4vw;">Our Breweries</h1><br><br>
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Moersleutel</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Dutch brewery which focuses on dark beers, which they do on a world class level.</p><br><br>
+        <div id="aboutBrew">
+            <h1 style="font-size: 3.5vw; color:#701717">Our Breweries</h1><br><br>
+            <h1 class="brewName">Moersleutel</h1><br>
+            <p>Dutch brewery which focuses on dark beers, which they do on a world class level.</p><br><br>
 
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Mad Scientist</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Hungarian brewery which makes all the beer styles, and sometimes pushes the boundaries <br> 
+            <h1 class="brewName">Mad Scientist</h1><br>
+            <p>Hungarian brewery which makes all the beer styles, and sometimes pushes the boundaries <br> 
             in beer brewing with their meads and also crazy adjuncts in their beer.</p><br><br>
 
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Gamma</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Great danish brewery that makes some of the best IPA's in Denmark</p><br><br>
+            <h1 class="brewName">Gamma</h1><br>
+            <p>Great danish brewery that makes some of the best IPA's in Denmark</p><br><br>
 
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Garage</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Spanish brewery mostly known for their IPA's.</p><br><br>
+            <h1 class="brewName">Garage</h1><br>
+            <p>Spanish brewery mostly known for their IPA's.</p><br><br>
 
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Frontaal</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Dutch brewery mostly known for their dark and barrel aged beers, but also their IPA's are high quality.</p><br><br>
+            <h1 class="brewName">Frontaal</h1><br>
+            <p>Dutch brewery mostly known for their dark and barrel aged beers, but also their IPA's are high quality.</p><br><br>
         
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Salama</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Finnish brewery who focus on making very hop-forward fruity IPA's, but also great <br> 
-            Berliner weisses and big Imperial Stouts.</p><br><br>
+            <h1 class="brewName">Salama</h1><br>
+            <p>Finnish brewery who focus on making very hop-forward fruity IPA's, but also great <br> Berliner weisses and big Imperial Stouts.</p><br><br>
         
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Observatoriet</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Danish brewery who focuses on making modern Wild Ales.</p><br><br>
+            <h1 class="brewName">Observatoriet</h1><br>
+            <p>Danish brewery who focuses on making modern Wild Ales.</p><br><br>
 
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Garden</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Croatian brewery who makes most beer styles really well. IPA's, fruited sours and Stouts.</p><br><br>
+            <h1 class="brewName">Garden</h1><br>
+            <p>Croatian brewery who makes most beer styles really well. IPA's, fruited sours and Stouts.</p><br><br>
         
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">Brulo</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Scottish brewery who only make non-alcoholic beers. Most of them are fruity IPA's.</p><br><br>
+            <h1 class="brewName">Brulo</h1><br>
+            <p>Scottish brewery who only make non-alcoholic beers. Most of them are fruity IPA's.</p><br><br>
         
-        <h1 style="color: rgb(0, 0, 0); font-size: 3vw;">The White Hag</h1><br>
-        <p style="color: rgb(0, 0, 0,); font-size: 1vw;">Irish brewery who makes affordable craft beer, while maintaining a high quality throughout all beer styles.</p><br><br> -->
+            <h1 class="brewName">The White Hag</h1><br>
+            <p>Irish brewery who makes affordable craft beer, while maintaining a high quality throughout all beer styles.</p><br><br>
+        </div>
+    
+  
+        
         
     </div>    
 
@@ -113,7 +118,36 @@
             </div>
         </div>    
     </footer>
-    <script src="./script.js"></script>
+    <script>        
+        const beerBtn = document.getElementById("beerAbout");
+        const ImgBeer = document.getElementById("buttonImgBeer");
+        const brewBtn = document.getElementById("breweryAbout");
+        const ImgBrew = document.getElementById("buttonImgBrew");
+        const aboutBeer = document.getElementById("aboutBeer");
+        const aboutBrew = document.getElementById("aboutBrew");
+        const headerText = document.getElementById("headerText");
+        beerBtn.onclick = function(){
+            showBeer()
+        };
+        brewBtn.onclick = function(){
+            showBrew()
+        };
+
+        function showBeer() {
+            aboutBeer.style.display = "block";
+            aboutBrew.style.display = "none";
+            headerText.style.display = "none";
+            ImgBeer.style.height = "4vw";
+            ImgBrew.style.height = "4vw";
+        };
+        function showBrew() {
+            aboutBrew.style.display = "block";
+            aboutBeer.style.display = "none";
+            headerText.style.display = "none";
+            ImgBrew.style.height = "4vw";
+            ImgBeer.style.height = "4vw";
+        };
+    </script>
 </body>
 
 
