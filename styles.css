@@ -56,14 +56,27 @@ body{
 #question-Buttons button{
     
     font-size: 5vh;
-    padding: 2vw;
+    padding: 0.5vw;
     background-color: transparent;
     color: white;
-    border: 0.1vw solid white;
-    border-radius: 50%;
     margin-top: 3vw;
     cursor:  pointer;
-}
+
+    --b:0.1vw;   /* thickness of the border */
+  --c:#ff31319d;   /* color of the border */
+  --w:0.6vw;  /* width of border */
+  
+  border:var(--b) solid transparent; /* space for the border */
+  --g:transparent 90deg,var(--c) 0;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+  background-size:var(--w) var(--w);
+  background-origin:border-box;
+  background-repeat:no-repeat;}
+
 
 #question-Buttons button:hover{ 
 color: #ff31319d;
@@ -685,79 +698,7 @@ position: absolute;
 }  
 
 
-/*#form {
-max-width:100%;
-margin-bottom: 10vw;
-margin-left: auto;
-margin-right: auto;
-margin-top: 0%;
 
-}
-
- #form label {
-   color:#fff;
-   
-   font-family: 'Franklin Gothic Book';
- }
-
-.textinput {
-width: 13vw;
-height: 1.2vw;
-justify-content: end;
-display: flex;
-
-}
-.label{
-  margin-right: 80px ;
-  justify-content: left;
-}
-.formstyle {
-  display: flex;
-  flex-direction: row;
-  justify-content:right;
-  align-items: center;
-}
-.formstyleProducts{
-  display: flex;
-  flex-direction: row;
-  vertical-align: middle;
-  justify-content: end;
-}
-.beerandcan{
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content:end;
-  height: 165px;
-  
-}
-.formstyleProducts label{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  margin-bottom: 2vh;
-  margin-right: 7vw;
-}
-.beerandcan input{
-  width: 3vw;
-}
-#formsubmit {
-  color: #ffffff;
-  background-color: transparent;
-  font-size: 1.5vw;
-  border-color:  #701578;
-  border-radius: 0.1vw;
-  cursor: pointer;
-  }
-
-#formsubmit:hover {
-  background-color: #90199b36; 
-  color: #1c051e;
-}
-
-*/
 /*ABOUT US PAGE STARTS*/
 
 
@@ -812,9 +753,11 @@ display: flex;
   flex-direction: column;
   text-align:center;
   animation: mymove 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  font-size: 1.3vw;
 }
 
 .abouttextright{
+  font-size: 1.3vw;
   width: 50%;
   padding-right: 5vw;
   display:flex;
@@ -823,13 +766,20 @@ display: flex;
   text-align:center;
   animation: mymove2 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-#staff{
-  margin-top: 2vw;
-  margin-bottom: 10vw;
+
+
+
+/* Staff */
+.staffname {
+  color: #ff31319d;
+  font-size: 1.7vw;
+  margin-top: 1vw;
 }
-#staff h1{
-  margin-bottom: 3%;
-  color: #FF3131;
+
+.staffcard h3 {
+  color: #949494;
+  margin-bottom: 2vw;
+  font-size: 1vw;
 }
 
 #staff-box{
@@ -847,46 +797,25 @@ display: flex;
   width: 15vw;
   height: 12vw;
 }
-.staffname{
-  font-family: 'Franklin Gothic Book';
-  color: #FF3131;
-  margin-top: 1vw;
 
+.staffcard p{
+  font-size: 1.1vw;
+  margin-bottom: 12vw;
 }
-#staff h3{
-  font-family:'Franklin Gothic Book';
-  font-size:medium;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  color:rgb(151, 151, 151)
-}
+/* Staff ends */
 
-#staffp{
-  line-height: 6;
-  font-family: 'Franklin Gothic Book';
-  width: 15vm;
-  
-}
-#aboutshop h1{
-  color: #FF3131
-}
+
 #contact{
   width:100%;
   background-size:cover ;
   height: fit-content;
   display: flex;
-  padding-bottom: 10vw;
- 
+}
 
-}
-#contact h1{
- color: #FF3131;
-}
 .openinghours{
   width: 50%;
   padding-left: 5vw;
   display:flex;
-  justify-content: center;
   flex-direction: column;
   text-align:center;
 }
@@ -895,13 +824,6 @@ display: flex;
 
 }
 
-.some{
-  margin: 0.5vw;
-}
-.mapouter{
-  margin-top: 1vw;
-
-}
 
 /*ABOUT US PAGE ENDS*/
 
