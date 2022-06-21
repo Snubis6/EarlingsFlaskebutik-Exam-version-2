@@ -86,7 +86,7 @@ border: #ff31319d 0.1vw solid;
 
 #links-Box{    
   font-size: 3vh;
-  background-color: #ff31315f;
+  background-color: #7e1a1a86;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
   display: flex;
@@ -170,7 +170,7 @@ z-index: 0;
   color: #701717;
 }
 .articleParagraph{
-  font-size: 0.9;
+  font-size: 1.1vw;
   color: #000;
 }
 .content-Image-Article-Box{
@@ -218,7 +218,7 @@ footer{
   position: absolute;
   width: 150px;
   height: auto;
-  left: 46vw;
+  left: 42vw;
   bottom: -30vh;
   
 }
@@ -227,21 +227,52 @@ footer{
 }
 
 #footer-Newsletter-Box{
-  position: absolute;
+position: absolute;
   width: 300px;
   height: 200px;
   right: 10vw;
-  top: 15vh;
+  top: 10vh;
   color: white;
-  font-size: 1.5vh;
+  font-size: 2vh;
   
 }
 #newsletterBox-Content{
   text-align: center;
 }
-#newsletterBox-Content h1{margin-top: 2vh;}
-#newsletterBox-Content form{margin-top: 2vh;}
-#newsletterBox-Content button{margin-top: 2vh;}
+
+
+#newsletterBox-Content button{
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4vw; 
+
+  --b:0.1vw;   /* thickness of the border */
+  --c:#ff31319d;   /* color of the border */
+  --w:0.6vw;  /* width of border */
+  
+  border:var(--b) solid transparent; /* space for the border */
+  --g:transparent 90deg,var(--c) 0;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+  background-size:var(--w) var(--w);
+  background-origin:border-box;
+  background-repeat:no-repeat;}
+
+  #newsletterBox-Content button:hover {
+    color: #ff31319d;
+    border: #ff31319d 0.2vw solid;
+  } 
+
 
 #footer-Img{
   filter: invert(4%) sepia(28%) saturate(113%) hue-rotate(314deg) brightness(93%) contrast(84%) drop-shadow( 0px -5px 0px #191919);
@@ -271,7 +302,7 @@ footer{
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  width: 40vw;
+  width: 20vw;
   height: 15vh;
   border: 1px solid #888;
   width: 40%;
@@ -475,7 +506,7 @@ footer{
     0% {
       
       
-      filter: drop-shadow(0 0 10px #f5c7f8);
+      filter: drop-shadow(0 0 10px #d18dd6);
     }
     20.6% {
       filter: none;

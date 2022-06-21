@@ -12,11 +12,11 @@
 
 <body>
     <nav id="links-Box">        
-        <a class="links" href="./aboutbeer.html">About beer</a>
-        <a class="links" href="./aboutus.html">About us</a>
-        <a class="logo-Home" href="./entrance.html"><img src="./images/semple1.png" alt="Home" ></a>
+        <a class="links" href="./aboutbeer.html" >About beer</a>
+        <a class="links" href="./aboutus.html" >About us</a>
+        <a class="logo-Home" href="./entrance.html" ><img style="width: 5vw;" src="./images/logone.png" alt="Home" ></a>
         <a class="links" href="./products.html">Products</a>
-        <a class="links" href="./Events.html" style="text-decoration: underline; color: #450e4b; text-shadow: 0 0 15px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;">Events</a>           
+        <a class="links" href="./Events.html" style=" filter: drop-shadow(0 0 10px #d18dd6) drop-shadow(0 0 10px #d18dd6); ">Events</a>           
     </nav>
     <div class="main-Box">
         
@@ -29,12 +29,19 @@
             <div class="article-Box">
                 <img style="width: 80%;" src="./images/Articles/maindeal.png" alt="Deal">
                 <div class="content-Text-Article-Box">
-                    <h1 class="articleHeadline">Beer Tasting  -  14/06/2022</h1><br>
-                    <p class="articleParagraph">Come and try out our new arrivals straigt from Moersleutel brewery, one of the best! <br><br> More information before the event, or if you want to make sure to be the first who knows about the details subscribe to our <a href="#footer-Newsletter-Box">Newsletter!</a></p>
+                    <h1 class="articleHeadline">Beer Tasting  -  14/07/2022</h1><br>
+                    <p class="articleParagraph">Come and try out our new arrivals straigt from Moersleutel brewery, one of the best! <br><br> More information before the event, or if you want to make sure to be the first who knows about the details subscribe to our <a style="color:#701717 ;" href="#footer-Newsletter-Box">Newsletter!</a></p>
                 </div>  
             </div>
         </div>
     </div>
+
+
+    <div>
+        <h1 style="color:#701717 ; text-align: center; font-size: 4.2vh;"> Organize Your Event With Us!</h1>
+        <h2 style="text-align: center; width: 45%; margin:auto; margin-bottom:5vw; color:white; margin-top: 2vh; font-size: 2.2vh;"> We provide personalized packages for your event, with the form below you can contact us with your order. We will get back to you via email or phone and discuss the details. Please let us know about your event at least a week advance, so we can arrange everything smoothly!</h2>
+    </div>
+
 
         <form  name="form1" id="form" onsubmit=" return myEventFunction()">
 
@@ -45,12 +52,12 @@
             </div>
 
             <div class="formstyle">
-                <label  class="label" for="email">E-mail</label>
+                <label  class="label" for="emaila">E-mail</label>
                 <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="email2" class="textinput" name="fname" placeholder="Type your email address..." value="">
             </div>
 
             <div class="formstyle">
-                <label class="label"  for="phone">Phone number</label>
+                <label class="label"  for="mphone">Phone number</label>
                 <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="phone" class="textinput" name="fname" placeholder="Type your phone number..." value=""> 
             </div>
 
@@ -69,14 +76,19 @@
                 <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="bottles" class="textinput" name="fname" placeholder="Type the number of bottles..." value="">
             </div>
 
+            <!-- <div class="formstyle">
+                <label class="label" for="contact">Contact</label>
+                <input  class="textinput" name="fname" type="radio" id="phone" name="fname" value="phone"> 
+                <label for="phone"> Phone</label>
+                <input class="textinput" name="fname" type="radio" id="email" name="fname" value="email"> 
+                <label for="email">Email</label>
+            </div> -->
+
             <div class="formstyle">
                 <label class="label"  for="product">Message:</label>
                 <input style="height: 10vw; width: 15vw; color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="product" class="textinput" name="fname" placeholder="Type your message here..." value=""><br><br>
             </div>
 
-            <div id="confmess" style="display: none;" >
-                <h2 style="color: white;">Hello</h2>
-                </div>
 
             <input id="formsubmit" type="submit" value="Submit">
 
@@ -109,16 +121,16 @@
             <p>Privacy Policy</p><br>
         </div>
         <div id="footer-Logo-Box">
-            <img src="./images/semple.png" alt="Logo">
+            <img style="width: 15vw;" src="./images/logo.png" alt="Logo">
         </div>
         <div id="footer-Newsletter-Box">
             <div id="newsletterBox-Content">
                 <h1>Subscribe to our newsletter</h1>
                 <form>
-                    <input type="text" id="email" name="email">
+                    <input style="width: 12vw; height:1.5vw; margin-top: 2vw;" type="text" id="email" name="email" placeholder="Type your email address...">
                     
                 </form>
-                <button type="button" id="newsletter-SubmitButton" >Submit</button>
+                <button style="margin-top:2.5vw ;" type="button" id="newsletter-SubmitButton"  >Submit</button>
             </div>
         </div>    
     </footer>
