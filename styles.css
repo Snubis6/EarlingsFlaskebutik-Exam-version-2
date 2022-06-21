@@ -9,7 +9,7 @@
   font-family: 'Franklin Gothic Book';
 }
 * h1{
-  font-family: 'Franklin Gothic Book';
+  font-family: 'baskerville_old_face_dregular';
 } 
 body{
     background-color: black;
@@ -115,6 +115,12 @@ border: #ff31319d 0.1vw solid;
   color: white;
   
 }
+.links2{
+  text-decoration: none;
+  color: white;
+  
+}
+
 
 
 .links:hover{
@@ -721,11 +727,12 @@ position: absolute;
 
 #succesMessage{
   display: none;
-  width: 15%;
-  height: 10%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 25%;
   color: white;
   text-align: center;
-  font-size: 0.95vw;
+  font-size: 1.2vw;
   background-color: #ff313123;
   font-family: 'baskerville_old_face_dregular';
   

@@ -12,24 +12,13 @@ var span = document.getElementsByClassName("close")[0];
 let productBox = "";
 
 
-// function addSearchListener() {
-//   console.log('123')
-// }
 
 window.onload = function() {
    document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
    mySearchFunction();
-  //
-  //myEventFunction();
+   
+}
 
- }
-
-
-
-
-// function addFormListener() {
-//   console.log('345')
-// }
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -51,9 +40,11 @@ window.onclick = function(event) {
 
 
   
+
 document.getElementById("eventForm").addEventListener("submit", myEventFunction);
 //EVENTS PAGE
 function myEventFunction(e) {
+  
   e.preventDefault();
   const form = document.getElementById("eventForm")
   const message = document.getElementById("succesMessage")
@@ -100,29 +91,12 @@ function mySearchFunction(){
           li[i].style.display = "none";
       }
   }
-}
-
+  
 aleTag.onclick = function(d) {
-    d.preventDefault();
-    productContainer.innerHTML="";
-    for( const product of products){
-      if( product.type == String('Ale')){
-      productBox = `
-      <div class="box-Product" id="productBox">
-        <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-        <p class="box-Product-Name" id="productBoxName">${product.name}</p>
-        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
-        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
-      </div>
-      `;
-      productContainer.insertAdjacentHTML("beforeend", productBox);
-}}};
-
-lagerTag.onclick = function(d) {
   d.preventDefault();
   productContainer.innerHTML="";
   for( const product of products){
-    if( product.type == String('Lager')){
+    if( product.type == String('Ale')){
     productBox = `
     <div class="box-Product" id="productBox">
       <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
@@ -134,3 +108,20 @@ lagerTag.onclick = function(d) {
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
 
+lagerTag.onclick = function(d) {
+d.preventDefault();
+productContainer.innerHTML="";
+for( const product of products){
+  if( product.type == String('Lager')){
+  productBox = `
+  <div class="box-Product" id="productBox">
+    <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+    <p class="box-Product-Name" id="productBoxName">${product.name}</p>
+    <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+    <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+  </div>
+  `;
+  productContainer.insertAdjacentHTML("beforeend", productBox);
+}}};
+
+};
