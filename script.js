@@ -11,6 +11,15 @@ var span = document.getElementsByClassName("close")[0];
 
 let productBox = "";
 
+
+
+window.onload = function() {
+   document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
+   mySearchFunction();
+   
+}
+
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -32,10 +41,29 @@ window.onclick = function(event) {
 
   
 
+document.getElementById("eventForm").addEventListener("submit", myEventFunction);
+//EVENTS PAGE
+function myEventFunction(e) {
+  
+  e.preventDefault();
+  const form = document.getElementById("eventForm")
+  const message = document.getElementById("succesMessage")
 
+  form.style.display = "none"; 
+  message.style.display = "block";
+  
+  setTimeout(function() {
+    message.style.display = "none";
+    form.style.display = "block"
+  }, "5000") //5sec
+  
+document.getElementById("eventForm").reset();
 
-window.onload = function(){
-productContainer.innerHTML="";
+  return;
+}
+
+function mySearchFunction(){
+  productContainer.innerHTML="";
   for( const product of products){
     productBox = `
       <div class="box-Product" id="productBox">
@@ -44,11 +72,11 @@ productContainer.innerHTML="";
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
-      `;
-       productContainer.insertAdjacentHTML("beforeend", productBox);
-}
-document.getElementById("mySearchInput").addEventListener("keyup", mySearchFunction);
-function mySearchFunction(){
+    `;
+    productContainer.insertAdjacentHTML("beforeend", productBox);
+  };
+
+
   var input, filter, li, a, i, txtValue;
   input = document.getElementById("mySearchInput");
   filter = input.value.toUpperCase();
@@ -63,34 +91,12 @@ function mySearchFunction(){
           li[i].style.display = "none";
       }
   }
-}
-
-};
-
-
-
-
+  
 aleTag.onclick = function(d) {
-    d.preventDefault();
-    productContainer.innerHTML="";
-    for( const product of products){
-      if( product.type == String('Ale')){
-      productBox = `
-      <div class="box-Product" id="productBox">
-        <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-        <p class="box-Product-Name" id="productBoxName">${product.name}</p>
-        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
-        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
-      </div>
-      `;
-      productContainer.insertAdjacentHTML("beforeend", productBox);
-}}};
-
-lagerTag.onclick = function(d) {
   d.preventDefault();
   productContainer.innerHTML="";
   for( const product of products){
-    if( product.type == String('Lager')){
+    if( product.type == String('Ale')){
     productBox = `
     <div class="box-Product" id="productBox">
       <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
@@ -102,25 +108,20 @@ lagerTag.onclick = function(d) {
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
 
+lagerTag.onclick = function(d) {
+d.preventDefault();
+productContainer.innerHTML="";
+for( const product of products){
+  if( product.type == String('Lager')){
+  productBox = `
+  <div class="box-Product" id="productBox">
+    <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+    <p class="box-Product-Name" id="productBoxName">${product.name}</p>
+    <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+    <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+  </div>
+  `;
+  productContainer.insertAdjacentHTML("beforeend", productBox);
+}}};
 
-
-
-
-//EVENTS PAGE
-
-function myEventFunction() {
-
-  var empt = document.forms["form1"]["fname"].value;
-if (empt == "")
-{
-alert("Please input a Value");
-return false;
-}
-else 
-{
-  document.getElementById("form" ).style.display = "none"; 
-  document.getElementById("confmess").style.display = "block";
-return true; 
-}
-}
-
+};

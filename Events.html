@@ -16,7 +16,7 @@
         <a class="links" href="./aboutus.html" >About us</a>
         <a class="logo-Home" href="./entrance.html" ><img style="width: 5vw;" src="./images/logone.png" alt="Home" ></a>
         <a class="links" href="./products.html">Products</a>
-        <a class="links" href="./Events.html" style=" filter: drop-shadow(0 0 10px #d18dd6) drop-shadow(0 0 10px #d18dd6); ">Events</a>           
+        <a class="links2" href="./Events.html" style=" filter: drop-shadow(0 0 10px #d18dd6) drop-shadow(0 0 10px #d18dd6); ">Events</a>           
     </nav>
     <div class="main-Box">
         
@@ -39,41 +39,41 @@
 
     <div>
         <h1 style="color:#701717 ; text-align: center; font-size: 2.5vw;"> Organize Your Event With Us!</h1>
-        <h2 style="text-align: center; width: 45%; margin:auto; margin-bottom:5vw; color:white; margin-top: 2vh; font-size: 2.2vh;"> We provide personalized packages for your event, with the form below you can contact us with your order. We will get back to you via email or phone and discuss the details. Please let us know about your event at least a week advance, so we can arrange everything smoothly!</h2>
+        <p style="text-align: center; width: 45%; margin:auto; margin-bottom:5vw; color:white; margin-top: 2vh; font-size: 2.2vh;"> We provide personalized packages for your event, with the form below you can contact us with your order. We will get back to you via email or phone and discuss the details. Please let us know about your event at least a week advance, so we can arrange everything smoothly!</p>
     </div>
 
 
-        <form  name="form1" id="form" onsubmit=" return myEventFunction()">
+        <form  name="form1"  id="eventForm">
 
             <div class="formstyle">
 
                 <label class="label" for="name">Name</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="name" class="textinput" name="fname" placeholder="Type your name..."  value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="name" class="textinput" name="fname" placeholder="Type your name..."  value="">
             </div>
 
             <div class="formstyle">
-                <label  class="label" for="emaila">E-mail</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="email2" class="textinput" name="fname" placeholder="Type your email address..." value="">
+                <label class="label" for="emaila">E-mail</label>
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="email2" class="textinput" name="fname" placeholder="Type your email address..." value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="mphone">Phone number</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="phone" class="textinput" name="fname" placeholder="Type your phone number..." value=""> 
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="phone" class="textinput" name="fname" placeholder="Type your phone number..." value=""> 
             </div>
 
             <div class="formstyle">
-                <label  class="label" for="date">Date of Event</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 1vw;" type="date" id="date" class="textinput" name="fname" value="">
+                <label class="label" for="date">Date of Event</label>
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 1vw;" type="date" id="date" class="textinput" name="fname" value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="cans">Number of Cans</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="cans" class="textinput" name="fname" placeholder="Type the number of cans..." value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="cans" class="textinput" name="fname" placeholder="Type the number of cans..." value="">
             </div>
 
             <div class="formstyle">
                 <label class="label"  for="bottles">Number of Bottles</label>
-                <input style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="bottles" class="textinput" name="fname" placeholder="Type the number of bottles..." value="">
+                <input required style="height: 1.4vw; width: 15vw;color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="bottles" class="textinput" name="fname" placeholder="Type the number of bottles..." value="">
             </div>
 
             <!-- <div class="formstyle">
@@ -86,15 +86,18 @@
 
             <div class="formstyle">
                 <label class="label"  for="product">Message:</label>
-                <input style="height: 10vw; width: 15vw; color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="product" class="textinput" name="fname" placeholder="Type your message here..." value=""><br><br>
+                <input required style="height: 10vw; width: 15vw; color: rgb(0, 0, 0); font-size: 0.9vw;" type="text" id="product" class="textinput" name="fname" placeholder="Type your message here..." value=""><br><br>
             </div>
 
 
-            <input id="formsubmit" type="submit" value="Submit">
+            <input id="formsubmit"  type="submit" value="Submit">
 
 
         </form> 
 
+        <div id="succesMessage">
+            <p>You have successfully submitted the form!<br><br> The page will refresh in 5 seconds</p>
+        </div>
 
            
     </div>
