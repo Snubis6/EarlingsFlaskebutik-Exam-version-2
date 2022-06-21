@@ -1,6 +1,6 @@
 const productContainer = document.querySelector(".product-Contents-Box");
 const form = document.getElementById("tagSearch");
-const searchTag = document.querySelector('.tagsSubmitBtn');
+const searchTag = document.querySelector('.searchInput');
 const btnTag = document.getElementById("tags-submit");
 const clearTag = document.getElementById("tags-clear");
 const aleTag = document.querySelector('.tagsAleBtn');
@@ -46,7 +46,25 @@ productContainer.innerHTML="";
       </div>
       `;
        productContainer.insertAdjacentHTML("beforeend", productBox);
-}};
+}
+function mySearchFunction(){
+  var input, filter, li, a, i, txtValue;
+  input = document.getElementById("mySearchInput");
+  filter = input.value.toUpperCase();
+  
+  li = document.getElementsByClassName("box-Product");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByClassName("box-Product-Name")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
+
+};
 
 
 

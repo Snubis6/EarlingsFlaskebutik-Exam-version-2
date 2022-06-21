@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    
     <title>Products</title>
 </head>
 
@@ -31,7 +32,7 @@
         </div>
         <div id="search-Box-Products">
             <form id="tagSearch">
-                <input  type="text" id="tags" class="tagSearchBar" name="tags">
+                <input  type="text" id="mySearchInput" class="searchInput" onkeyup="mySearchFunction()" placeholder="Search for names.." title="Type in a name">
                 <button type="submit" id="tags-submit" class="tagsSubmitBtn">Confirm</button>
                 <button type="submit" id="tags-clear" class="tagsClearBtn">Clear</button>
                 <button type="submit" id="tags-ale" class="tagsAleBtn">Ale</button>
@@ -40,7 +41,7 @@
             </form>
         </div>
         <div class="product-Contents-Box" id="product-Contents-Box">
-            <div class="box-Product" id="productBox">
+            <!-- <div class="box-Product" id="productBox">
                 <img style="width: 100px; height: auto;" src="./images/Products/1.png" class="box-Product-Image" id="productBoxImage"><br>
                 <div class="box-Product-Description">
                     <p class="box-Product-Name" id="productBoxName">${product.name}</p>
@@ -55,7 +56,7 @@
                     <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
                     <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -92,7 +93,7 @@
             </div>
         </div>    
     </footer>
-    <script src=""></script>
-    <script src="./data.js"></script>
+    <script type = "text/javascript" src="./script.js"></script>
+    <script type = "text/javascript" src="./data.js"></script>
 </body>
 </html>
