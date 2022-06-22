@@ -77,7 +77,34 @@
             </div>
         </div>    
     </footer>
-    <script type = "text/javascript" src="./script.js"></script>
+    <script type = "text/javascript" src="./script.js">
+    var modalBeer = document.getElementById("myBeerModal");
+    var btnBeer = document.getElementById("productBox");
+    var spanBeer = document.getElementsByClassName("closeBeerModal")[0];
+  
+
+    // When the user clicks the button, open the modal 
+    btnBeer.onclick = function() {
+        showModal()
+    };
+
+    function showModal() {
+        modalBeer.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    spanBeer.onclick = function() {
+        modalBeer.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modalBeer.style.display = "none";
+
+        };
+    };
+    
+    </script>
     <script type = "text/javascript" src="./data.js"></script>
 </body>
 </html>

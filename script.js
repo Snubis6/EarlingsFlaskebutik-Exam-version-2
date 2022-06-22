@@ -55,10 +55,8 @@ function myEventFunction(e) {
   setTimeout(function() {
     message.style.display = "none";
     form.style.display = "block"
-  }, "5000") //5sec
-  
-document.getElementById("eventForm").reset();
-
+  }, "5000") //5sec  
+  document.getElementById("eventForm").reset();
   return;
 }
 
@@ -66,12 +64,21 @@ function mySearchFunction(){
   productContainer.innerHTML="";
   for( const product of products){
     productBox = `
-      <div class="box-Product" id="productBox">
+      <div class="box-Product"  id="productBox">
         <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
         <p class="box-Product-Name" id="productBoxName">${product.name}</p>
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
+      <div id="myBeerModal" class="modalBeer">
+        <!-- Modal content -->
+        <div class="modal-Beer-Content">
+          <span class="closeBeerModal">&times;</span>
+            <div id="modal-Beer-Text-Box" >
+                <p>Thanks for subscribing to our fancy newsletter!</p>
+            </div>
+        </div>      
+    </div>
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
   };
