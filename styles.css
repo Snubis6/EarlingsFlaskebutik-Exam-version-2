@@ -934,6 +934,18 @@ position: absolute;
 
 #aboutBeer{
   display: none;
+  
+}
+#aboutBeer h1{
+  color:#701717;
+  text-align: center;
+  font-size: 3vw;
+  padding-bottom: 3vh;
+  padding-top: 10vh;
+}
+#aboutBeer p{
+  color:white;
+  
 }
 
 #aboutBrew{
@@ -941,6 +953,7 @@ position: absolute;
   text-align: center;
   color: white;
   padding-top: 10%;
+  font-size: 3vw;
 }
 
 #headerText{
