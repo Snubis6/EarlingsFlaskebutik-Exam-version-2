@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Beers & Breweries</title>
 </head>
 <body>
     <nav id="links-Box">        
-        <a class="links" href="./aboutourthing.html" style=" filter: drop-shadow(0 0 10px #d18dd6) drop-shadow(0 0 10px #d18dd6); ">About beer</a>
+        <a class="links" href="./aboutourthing.html" style=" filter: drop-shadow(0 0 10px #d18dd6) drop-shadow(0 0 10px #d18dd6); ">Beers & Breweries</a>
         <a class="links" href="./aboutus.html">About us</a>
         <a class="logo-Home" href="./entrance.html" ><img style="width: 5vw;" src="./images/logone.png" alt="Home" ></a>
         <a class="links" href="./products.html">Products</a>
@@ -19,7 +19,9 @@
     <div class="main-Box">
 
         <div id="hero-Box">
+            <h1>Erlings Flaskebutik</h1>
             <img id="hero-Img" src="./images/event.png" alt="Hero">
+ 
         </div>
 
         <h1 id="headerText" style="color:#701717; font-size:3vw; margin-bottom:4vw; margin-top:2vw;">Choose what you want to read about:</h1>
@@ -326,6 +328,7 @@
         };
 
         function showBeer() {
+            
             aboutBeer.style.display = "block";
             aboutBrew.style.display = "none";
             headerText.style.display = "none";
@@ -333,6 +336,7 @@
             ImgBrew.style.height = "4vw";
         };
         function showBrew() {
+            
             aboutBrew.style.display = "block";
             aboutBeer.style.display = "none";
             headerText.style.display = "none";
