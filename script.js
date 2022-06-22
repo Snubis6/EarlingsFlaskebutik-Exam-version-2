@@ -39,7 +39,6 @@ window.onclick = function(event) {
 };
 
 
-  
 
 document.getElementById("eventForm").addEventListener("submit", myEventFunction);
 //EVENTS PAGE
@@ -61,8 +60,11 @@ function myEventFunction(e) {
 }
 
 function mySearchFunction(){
+  var e = 0;
+  
   productContainer.innerHTML="";
   for( const product of products){
+    e++;
     productBox = `
       <div class="box-Product"  id="productBox">
         <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
@@ -70,19 +72,13 @@ function mySearchFunction(){
         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
       </div>
-      <div id="myBeerModal" class="modalBeer">
-        <!-- Modal content -->
-        <div class="modal-Beer-Content">
-          <span class="closeBeerModal">&times;</span>
-            <div id="modal-Beer-Text-Box" >
-                <p>Thanks for subscribing to our fancy newsletter!</p>
-            </div>
-        </div>      
-    </div>
+      
+      
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
   };
 
+ 
 
   var input, filter, li, a, i, txtValue;
   input = document.getElementById("mySearchInput");
